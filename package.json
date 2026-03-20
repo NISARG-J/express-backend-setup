@@ -1,6 +1,6 @@
 {
   "name": "express-backend-setup",
-  "version": "1.0.1-beta.0",
+  "version": "1.0.1",
   "description": "CLI to scaffold a production-ready Express.js backend instantly",
   "type": "module",
   "bin": {
