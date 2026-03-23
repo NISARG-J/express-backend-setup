@@ -79,11 +79,13 @@ async function quickSetup(projectName) {
             message: chalk.blue.bold('📁 Where will you store media/files?'),
             options: [
                 { value: 'local', label: chalk.green('💾 Local (Multer)') },
-                { value: 's3', label: chalk.orange('☁️  AWS S3') },
+                { value: 's3', label: chalk.hex('#FFA500')('☁️  AWS S3') },
                 { value: 'cloudinary', label: chalk.blue('🌤️  Cloudinary') },
+
                 { value: 'firebase', label: chalk.yellow('🔥 Firebase Storage') },
                 { value: 'uploadcare', label: chalk.cyan('⬆️  Uploadcare') },
-                { value: 'mux', label: chalk.purple('🎥 Mux (Video)') },
+                { value: 'mux', label: chalk.hex('#800080')('🎥 Mux (Video)') },
+
                 { value: 'none', label: chalk.gray('❌ None') },
             ],
         });
@@ -96,8 +98,9 @@ async function quickSetup(projectName) {
                 { value: 'none', label: chalk.gray('❌ None') },
                 { value: 'nodemailer', label: chalk.green('📮 Nodemailer (SMTP)') },
                 { value: 'sendgrid', label: chalk.blue('📬 SendGrid') },
-                { value: 'mailgun', label: chalk.orange('🔫 Mailgun') },
+                { value: 'mailgun', label: chalk.hex('#FFA500')('🔫 Mailgun') },
                 { value: 'brevo', label: chalk.cyan('📨 Brevo (formerly Sendinblue)') },
+
                 { value: 'mailcheap', label: chalk.yellow('💰 Mailcheap') },
             ],
         });
